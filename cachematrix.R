@@ -1,7 +1,7 @@
 ## The following functions create a unique matrix and then set up a cache
-## system for the matrix and its inverse. 
+## system for the matrix and its inverse over two different functions.
 
-## makeCacheMatrix creates the matrix object that can cache its inverse
+## 1. makeCacheMatrix creates the matrix object that can cache its inverse
 
 makeCacheMatrix <- function(x = matrix()) {
 	m <- NULL
@@ -21,7 +21,7 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## cacheSolve computes the inverse of the matrix created by the makeCacheMatrix function.
+## 2. cacheSolve computes the inverse of the matrix created by the makeCacheMatrix function.
 
 cacheSolve <- function(x, ...) {
       ## Return a matrix that is the inverse of 'x'
